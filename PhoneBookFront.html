@@ -6,7 +6,7 @@
     <body>
         <h1>Landline</h1>
         <a href= "URL"></a>
-        <button>Find A Show</button>
+        <button id="FindAShow">Find A Show</button>
         </a></body></html>
         <style>
             body {
@@ -25,16 +25,29 @@
             }
         </style>
         <script>
-            var dateStr = prompt("Enter a Show Date (mm/dd/yy)");//date inputted by site user
-            if(dateStr == null){
-                alert("No Valid Show Entered");
-            }else if(dateStr.match(/[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/) != null){
-                if(dateStr.match("10/13/22")){
-                    alert("Lamberton Hall - 10/13/22");
+            document.getElementById("FindAShow").onclick = findAShow;
+            function findAShow(){
+                var dateStr = prompt("Enter a Show Date (mm/dd/yy)");//date inputted by site user
+                if(dateStr == null){
+                    alert("No Valid Show Entered");
+                }else if(dateStr.match(/[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/) != null){
+                    if(dateStr.match("10/13/22")){
+                        alert("Lamberton Hall - 10/13/22");
+                    }else if(dateStr.match("11/18/22")){
+                        alert("Lamberton Hall - 11/18/22");
+                    }
+                    var moreInfo = prompt("See More Info On Show? (y/n)");
+                    if(moreInfo.match("y") && dateStr.match("10/13/22")){
+                        location.replace("101322.html");
+                    }else{
+
+                    }
+                }else{
+                    alert("Invalid Date");
                 }
-            }else{
-                alert("Invalid Date");
             }
+            
+            
         </script>
     </body>
 </html>
