@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Phone Book</title>
+    </head>
+    <body>
+        <h1>Landline</h1>
+        <a href= "URL"></a>
+        <button>Find A Show</button>
+        </a></body></html>
+        <style>
+            body {
+                background-image: url('MIKE\ BAND\ BLUE.jpeg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+            h1{
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 400%;
+            }
+            button{
+                color: black;
+            }
+        </style>
+        <script>
+            var dateStr = prompt("Enter a Show Date (mm/dd/yy)");//date inputted by site user
+            if(dateStr == null){
+                alert("No Valid Show Entered");
+            }else if(dateStr.match(/[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/) != null){
+                if(dateStr.match("10/13/22")){
+                    alert("Lamberton Hall - 10/13/22");
+                }
+            }else{
+                alert("Invalid Date");
+            }
+        </script>
+    </body>
+</html>
