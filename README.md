@@ -1,0 +1,1 @@
+Note style of 101322.html as standard for all show pages

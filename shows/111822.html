@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lamberton 11/18/22</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <style>
+            button{
+                color: black;
+            }
+        </style>
+        <script>
+            var str;
+            var song1 = "Jam[1]<br>";
+            var song2 = "Settled In<br>";
+            var song3 = "Arcadia[2]<br>";
+            var header = "LAMBERTON HALL, Bethlehem, Pa - 11/18/2022<br>-------------------------------------------------------------<br>";
+            var soundCheck = "SOUNDCHECK:<br>";
+            var set1 = "SET 1:<br>";
+            var note1 = "[1] Jam was centered around I Know You Rider changes and song structure (Grateful Dead Version)<br>";
+            var note2 = "[2] Goose Cover; First Time Played <br>";
+            var bigNote = "All acoustic set for Jam Night event on Lehigh University Campus.<br>No bassist or percussionist (Anna on vocals only).<br>";
+            str = header + "<br>" + soundCheck + song1 + "<br>" + set1 + song2 + song3 + "<br> NOTES:<br>" + note1 + note2 + bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>

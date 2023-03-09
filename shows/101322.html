@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lamberton 10/13/22</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <style>
+            button{
+                color: black;
+            }
+        </style>
+        <script>
+            var str;
+            var song1 = "All Along the Watchtower[1] > <br>";
+            var song2 = "Electric Feel[2] <br>";
+            var song3 = "Althea[3] > <br>";
+            var song4 = "Rhino and a Butterfly[4] > <br>";
+            var song5 = "Time[5] > <br>";
+            var song6 = "Fire on the Mountain[6]<br>";
+            var song7 = "Don't Wanna Fight[7]<br>";
+            var song8 = "Settled In[8]<br>";
+            var song9 = "Free[9]<br>";
+            var song10 = "Going Down the Road Feeling Bad[10]<br>";
+            var header = "LAMBERTON HALL, Bethlehem, Pa - 10/13/2022<br>-------------------------------------------------------------<br>";
+            var set1 = "SET 1:<br>";
+            var encore = "ENCORE:<br>";
+            var note1 = "[1] Bob Dylan Cover; First Time Played<br>";
+            var note2 = "[2] MGMT Cover; First Time Played<br>";
+            var note3 = "[3] Grateful Dead Cover; First Time Played<br>";
+            var note4 = "[4] First Time Played<br>";
+            var note5 = "[5] Pink Floyd Cover; First Time Played<br>";
+            var note6 = "[6] Grateful Dead Cover; First Time Played<br>";
+            var note7 = "[7] Alabama Shakes Cover; First Time Played<br>";
+            var note8 = "[8] First Time Played<br>";
+            var note9 = "[9] Phish Cover; First Time Played<br>";
+            var note10 = "[10] Grateful Dead Cover; First Time Played <br>";
+            var bigNote = "First and only show with original drummer Zach Fry. <br>No bassist (Anna on vocals only).<br>Lehigh University Event for the Cheese Club<br>";
+            str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + song8 + song9 + "<br>" + encore + song10 + "<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7 + note8 + note9 + note10 + bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>

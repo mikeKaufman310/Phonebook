@@ -10,7 +10,7 @@
         </a></body></html>
         <style>
             body {
-                background-image: url('MIKE\ BAND\ BLUE.jpeg');
+                background-image: url('homePageImages\\MIKE\ BAND\ BLUE.jpeg');
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100% 100%;
@@ -38,9 +38,11 @@
                     }
                     var moreInfo = prompt("See More Info On Show? (y/n)");
                     if(moreInfo.match("y") && dateStr.match("10/13/22")){
-                        location.replace("101322.html");
-                    }else{
-
+                        location.replace("shows/101322.html");
+                    }else if(moreInfo.match("y") && dateStr.match("11/18/22")){
+                        location.replace("shows/111822.html");
+                    }else if(moreInfo.match("y")){
+                        alert("Sorry, No Associated Show Page Yet");
                     }
                 }else{
                     alert("Invalid Date");
