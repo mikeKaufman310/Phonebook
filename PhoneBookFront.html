@@ -1,50 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
     <head>
-        <title>The Phone Book</title>
+        <title>The Phone Book</title> <!--Home Page Header Title-->
     </head>
     <body>
-        <h1>Landline</h1>
+        <h1>Landline</h1> <!--Upper Left Title-->
         <a href= "URL"></a>
-        <button id="FindAShow">Find A Show</button>
+        <button id="FindAShow">Find A Show</button> <!--Find a Show Prompt Button-->
         </a></body></html>
         <style>
             body {
-                background-image: url('homePageImages\\MIKE\ BAND\ BLUE.jpeg');
+                /*10/13/22 Concert Poster for Image Background*/
+                background-image: url('homePageImages\\MIKE\ BAND\ BLUE.jpeg'); 
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: 100% 100%;
             }
             h1{
+                /*Color and font for Upper Left Title 'Landline'*/
                 color: white;
                 font-family: 'Courier New', Courier, monospace;
                 font-size: 400%;
             }
             button{
+                /*Find a show button color and style*/
                 color: black;
             }
         </style>
         <script>
-            document.getElementById("FindAShow").onclick = findAShow;
+            document.getElementById("FindAShow").onclick = findAShow; // Find a show button click function call
+            
+            //Find a show button associated function
             function findAShow(){
                 var dateStr = prompt("Enter a Show Date (mm/dd/yy)");//date inputted by site user
-                if(dateStr == null){
+                if(dateStr == null){//if no date is entered
                     alert("No Valid Show Entered");
-                }else if(dateStr.match(/[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/) != null){
-                    if(dateStr.match("10/13/22")){
+                }else if(dateStr.match(/[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/) != null){//if the data entered matches the desired regex
+                    if(dateStr.match("10/13/22")){//if 10/13/22 show chosen
                         alert("Lamberton Hall - 10/13/22");
-                    }else if(dateStr.match("11/18/22")){
+                    }else if(dateStr.match("11/18/22")){//if 11/18/22 show chosen
                         alert("Lamberton Hall - 11/18/22");
                     }
-                    var moreInfo = prompt("See More Info On Show? (y/n)");
-                    if(moreInfo.match("y") && dateStr.match("10/13/22")){
+
+                    var moreInfo = prompt("See More Info On Show? (y/n)");//prompt to go to show's chosen page
+                    if(moreInfo.match("y") && dateStr.match("10/13/22")){//go to 10/13/22 show page
                         location.replace("shows/101322.html");
-                    }else if(moreInfo.match("y") && dateStr.match("11/18/22")){
+                    }else if(moreInfo.match("y") && dateStr.match("11/18/22")){//go to 11/18/22 show page
                         location.replace("shows/111822.html");
-                    }else if(moreInfo.match("y")){
+                    }else if(moreInfo.match("y")){//error when trying to go to a page not created yet
                         alert("Sorry, No Associated Show Page Yet");
+                    }else{
+                        alert("Invalid Response");//invalid response to prompt
                     }
-                }else{
+                }else{//invalid date entered
                     alert("Invalid Date");
                 }
             }

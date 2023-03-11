@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lamberton 10/13/22</title>
+        <title>Lamberton 10/13/22</title> <!--Show Page Header Title-->
     </head>
     <body>
-        <button id="home">Home</button>
+        <button id="home">Home</button> <!--Home Button-->
         <style>
             button{
+                /*Home button color and style*/
                 color: black;
             }
         </style>
         <script>
+            //build page info string to print
             var str;
             var song1 = "All Along the Watchtower[1] > <br>";
             var song2 = "Electric Feel[2] <br>";
@@ -37,8 +39,11 @@
             var note10 = "[10] Grateful Dead Cover; First Time Played <br>";
             var bigNote = "First and only show with original drummer Zach Fry. <br>No bassist (Anna on vocals only).<br>Lehigh University Event for the Cheese Club<br>";
             str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + song8 + song9 + "<br>" + encore + song10 + "<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7 + note8 + note9 + note10 + bigNote;
-            document.write(str);
-            document.getElementById("home").onclick = goHome;
+
+            document.write(str);//write info string to page
+            document.getElementById("home").onclick = goHome;//home button click function call
+
+            //home button associated function
             function goHome(){
                 location.replace("../PhoneBookFront.html");
             }

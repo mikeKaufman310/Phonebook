@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Lamberton 11/18/22</title>
+        <title>Lamberton 11/18/22</title> <!--Show Page Header Title-->
     </head>
     <body>
-        <button id="home">Home</button>
+        <button id="home">Home</button> <!--Home Button-->
         <style>
             button{
+                /*Home button color and style*/
                 color: black;
             }
         </style>
         <script>
+            //build page info string to print
             var str;
             var song1 = "Jam[1]<br>";
             var song2 = "Settled In<br>";
@@ -22,8 +24,11 @@
             var note2 = "[2] Goose Cover; First Time Played <br>";
             var bigNote = "All acoustic set for Jam Night event on Lehigh University Campus.<br>No bassist or percussionist (Anna on vocals only).<br>";
             str = header + "<br>" + soundCheck + song1 + "<br>" + set1 + song2 + song3 + "<br> NOTES:<br>" + note1 + note2 + bigNote;
-            document.write(str);
-            document.getElementById("home").onclick = goHome;
+
+            document.write(str);//write info string to page
+            document.getElementById("home").onclick = goHome;//home button click function call
+
+            //home button associated function
             function goHome(){
                 location.replace("../PhoneBookFront.html");
             }
