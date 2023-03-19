@@ -7,6 +7,7 @@
         <h1>Landline</h1> <!--Upper Left Title-->
         <a href= "URL"></a>
         <button id="FindAShow">Find A Show</button> <!--Find a Show Prompt Button-->
+        <button id="ig">Instagram</button> <!--Link to Instagram Page-->
         </a></body></html>
         <style>
             body {
@@ -26,9 +27,14 @@
                 /*Find a show button color and style*/
                 color: black;
             }
+            button{
+                /*Instagram Button color and style*/
+                color: black;
+            }
         </style>
         <script>
             document.getElementById("FindAShow").onclick = findAShow; // Find a show button click function call
+            document.getElementById("ig").onclick = igLink; //Instagram button click function call
             
             //Find a show button associated function
             function findAShow(){
@@ -57,6 +63,10 @@
                 }
             }
             
+            //Instagram button
+            function igLink(){
+                location.replace("https://www.instagram.com/landlinetheband/?hl=en");
+            }
             
         </script>
     </body>
