@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upcoming Events</title>
+    </head>
+    <body>
+        <button id="Home">Home</button>
+        <style>
+            button{
+
+                color: black;
+            }
+        </style>
+        <script>
+            //build page info string to print
+            var str;
+            var header = "UPCOMING EVENTS:<br>";
+            var line = "-------------------------------------------------------------<br><br>";
+            var show1 = "4/1/23 - Lamberton Hall: Jam Night";
+            str = header + line + show1;
+            
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
