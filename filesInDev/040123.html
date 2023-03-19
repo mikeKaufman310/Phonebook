@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lamberton 4/1/23</title> <!--Show Page Header Title-->
+    </head>
+    <body>
+        <button id="home">Home</button> <!--Home Button-->
+        <style>
+            button{
+                /*Home button color and style*/
+                color: black;
+            }
+        </style>
+        <script>
+            //build page info string to print
+            var str;
+
+            document.write(str);//write info string to page
+            document.getElementById("home").onclick = goHome;//home button click function call
+
+            //home button associated function
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
