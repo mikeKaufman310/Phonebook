@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Upcoming Events</title>
+        <title>Upcoming Events</title> <!--Page Header Title-->
     </head>
     <body>
-        <button id="Home">Home</button>
+        <button id="Home">Home</button> <!--Home Button-->
         <style>
             button{
-
+                /*Home button color and style*/
                 color: black;
             }
         </style>
@@ -19,9 +19,10 @@
             var show1 = "4/1/23 - Lamberton Hall: Jam Night";
             str = header + line + show1;
             
-            document.write(str);
-            document.getElementById("home").onclick = goHome;
+            document.write(str);//write info string to page
+            document.getElementById("Home").onclick = goHome;//home button click function call
 
+            //home button associated function
             function goHome(){
                 location.replace("../PhoneBookFront.html");
             }
