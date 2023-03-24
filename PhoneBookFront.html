@@ -10,6 +10,56 @@
         <button id="ig">Instagram</button> <!--Link to Instagram Page-->
         <button id="eventButton">Events</button> <!--Link to Upcoming Events Page-->
         </a></body></html>
+        <script>
+            document.getElementById("FindAShow").onclick = findAShow; // Find a show button click function call
+            document.getElementById("ig").onclick = igLink; //Instagram button click function call
+            document.getElementById("eventButton").onclick = eventLink; //Upcoming Events button click function call
+            
+            //Find a show button associated function
+            function findAShow(){
+                var dateStr = prompt("Enter a Show Date (mm/dd/yy)");//date inputted by site user
+                if(dateStr == null){//if no date is entered
+                    alert("No Valid Show Entered");
+                }else if(dateStr.match(/[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/) != null){//if the data entered matches the desired regex
+                    if(dateStr.match("10/13/22")){//if 10/13/22 show chosen
+                        alert("Lamberton Hall - 10/13/22");
+                    }else if(dateStr.match("11/18/22")){//if 11/18/22 show chosen
+                        alert("Lamberton Hall - 11/18/22");
+                    }else if(dateStr.match("04/01/23")){
+                        alert("Lamberton Hall - 4/1/23");
+                    }else{
+                        alert("Invalid Date");
+                    }
+
+                    var moreInfo = prompt("See More Info On Show? (y/n)");//prompt to go to show's chosen page
+                    if(moreInfo.match("y") && dateStr.match("10/13/22")){//go to 10/13/22 show page
+                        location.replace("shows/101322.html");
+                    }else if(moreInfo.match("y") && dateStr.match("11/18/22")){//go to 11/18/22 show page
+                        location.replace("shows/111822.html");
+                    }else if(moreInfo.match("y") && dateStr.match("04/01/23")){
+                        location.replace("filesInDev/040123.html");
+                    }else if(moreInfo.match("y")){//error when trying to go to a page not created yet
+                        alert("Sorry, No Associated Show Page Yet");
+                    }else{
+                        alert("Invalid Response");//invalid response to prompt
+                    }
+                }else{//invalid date entered
+                    alert("Invalid Date (Must Match MM/DD/YY Format)");
+                }
+            }
+            
+            //Instagram button
+            function igLink(){
+                location.replace("https://www.instagram.com/landlinetheband/?hl=en");
+            }
+
+            //Upcoming Events Button
+            function eventLink(){
+                location.replace("shows/upcomingShows.html");
+            }
+            
+        </script>
+        <img src="homePageImages/4:1:23image1.jpeg" alt="upcomingShowPoster1">
         <style>
             body {
                 /*10/13/22 Concert Poster for Image Background*/
@@ -36,49 +86,12 @@
                 /*Upcoming Events Button color and style*/
                 color: black;
             }
+            img{
+                display:block;
+                margin-right:auto;
+                margin-top: auto;
+                width: 30%;
+            }
         </style>
-        <script>
-            document.getElementById("FindAShow").onclick = findAShow; // Find a show button click function call
-            document.getElementById("ig").onclick = igLink; //Instagram button click function call
-            document.getElementById("eventButton").onclick = eventLink; //Upcoming Events button click function call
-            
-            //Find a show button associated function
-            function findAShow(){
-                var dateStr = prompt("Enter a Show Date (mm/dd/yy)");//date inputted by site user
-                if(dateStr == null){//if no date is entered
-                    alert("No Valid Show Entered");
-                }else if(dateStr.match(/[0-9][0-9]\/[0-9][0-9]\/[0-9][0-9]/) != null){//if the data entered matches the desired regex
-                    if(dateStr.match("10/13/22")){//if 10/13/22 show chosen
-                        alert("Lamberton Hall - 10/13/22");
-                    }else if(dateStr.match("11/18/22")){//if 11/18/22 show chosen
-                        alert("Lamberton Hall - 11/18/22");
-                    }
-
-                    var moreInfo = prompt("See More Info On Show? (y/n)");//prompt to go to show's chosen page
-                    if(moreInfo.match("y") && dateStr.match("10/13/22")){//go to 10/13/22 show page
-                        location.replace("shows/101322.html");
-                    }else if(moreInfo.match("y") && dateStr.match("11/18/22")){//go to 11/18/22 show page
-                        location.replace("shows/111822.html");
-                    }else if(moreInfo.match("y")){//error when trying to go to a page not created yet
-                        alert("Sorry, No Associated Show Page Yet");
-                    }else{
-                        alert("Invalid Response");//invalid response to prompt
-                    }
-                }else{//invalid date entered
-                    alert("Invalid Date");
-                }
-            }
-            
-            //Instagram button
-            function igLink(){
-                location.replace("https://www.instagram.com/landlinetheband/?hl=en");
-            }
-
-            //Upcoming Events Button
-            function eventLink(){
-                location.replace("shows/upcomingShows.html");
-            }
-            
-        </script>
     </body>
 </html>
