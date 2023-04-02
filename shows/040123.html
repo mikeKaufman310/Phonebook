@@ -10,13 +10,19 @@
             
             //build page info string to print
             var str;
+            var soundCheck = "SOUNCHECK:<br>";
+            var soundCheck1 = "China Cat Sunflower[3]<br>";
+            var soundCheck2 = "Arcadia[4]<br>";
             var song1 = "Running in Cicles[1] > <br>";
             var song2 = "Sand[2] <br>";
             var note1 = "[1] First Time Played <br>";
             var note2 = "[2] Phish Cover; First Time Played <br>";
             var header = "LAMBERTON HALL, Bethlehem, Pa - 4/1/2022<br>-------------------------------------------------------------<br>";
             var set1 = "SET 1:<br>";
-            var bigNote;
+            var note3 = "[3] First Time Played; Unfinished; No Vocals<br>";
+            var note4 = "[4] Unfinished<br>";
+            var bigNote = "Opening set for Jam Night event on Lehigh University Campus.<br>First show with Anna on bass and new drummer Ethan Perlman (replacing original drummer Zach Fry).<br>";
+            str = header + "<br>" + soundCheck + soundCheck1 + soundCheck2 + "<br>" + set1 + song1 + song2 + "<br>NOTES:<br>" + note1 + note2 + note3 + note4 + bigNote;
 
             document.write(str);//write info string to page
             document.getElementById("home").onclick = goHome;//home button click function call
