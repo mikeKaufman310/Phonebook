@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-    <head>Show List</head>
+    <head><title>Show List</title></head>
     <body>
         <button id="home">Home</button>
         <script>
-            var header = "SHOWS<br>-------------------------------------------------------------<br><br>";
+            var header = "<br><br>SHOWS<br>-------------------------------------------------------------<br><br>";
             document.write(header);
             document.getElementById("home").onclick = goHome;//home button click function call
 
@@ -12,6 +12,38 @@
             function goHome(){
                 location.replace("../PhoneBookFront.html");
             }
+
+            var show = "10/13/22 - Lamberton Hall   ";
+            document.write(show);
+        </script>
+        <button id="101322">Details</button>
+        <script>
+            document.getElementById("101322").onclick = go;
+            function go(){
+                location.replace("101322.html");
+            }
+            document.write("<br>");
+            var show = "11/18/22 - Lamberton Hall";
+            document.write(show);
+        </script>
+        <button id="111822">Details</button>
+        <script>
+            document.getElementById("111822").onclick = go;
+            function go(){
+                location.replace("111822.html");
+            }
+            document.write("<br>");
+            var show = "4/1/23 - Lamberton Hall";
+            document.write(show);
+        </script>
+        <button id="4123">Details</button>
+        <script>
+            document.getElementById("4123").onclick = go;
+            function go(){
+                location.replace("040123.html");
+            }
+            document.write("<br>");
+            //next show here
         </script>
     </body>
 </html>
