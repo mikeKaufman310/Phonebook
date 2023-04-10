@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>Show List</head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            var header = "SHOWS<br>-------------------------------------------------------------<br><br>";
+            document.write(header);
+            document.getElementById("home").onclick = goHome;//home button click function call
+
+            //home button associated function
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>

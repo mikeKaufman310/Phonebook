@@ -6,14 +6,20 @@
     <body>
         <h1>Landline</h1> <!--Upper Left Title-->
         <a href= "URL"></a>
+        <button id="shows">Shows</button>
         <button id="FindAShow">Find A Show</button> <!--Find a Show Prompt Button-->
         <button id="ig">Instagram</button> <!--Link to Instagram Page-->
         <button id="eventButton">Events</button> <!--Link to Upcoming Events Page-->
         </a></body></html>
         <script>
+            document.getElementById("shows").onclick = showsList;
             document.getElementById("FindAShow").onclick = findAShow; // Find a show button click function call
             document.getElementById("ig").onclick = igLink; //Instagram button click function call
             document.getElementById("eventButton").onclick = eventLink; //Upcoming Events button click function call
+
+            function showsList(){
+                location.replace("shows/shows.html");
+            }
             
             //Find a show button associated function
             function findAShow(){
