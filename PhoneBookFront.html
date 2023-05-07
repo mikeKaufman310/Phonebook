@@ -33,6 +33,8 @@
                         alert("Lamberton Hall - 11/18/22");
                     }else if(dateStr.match("04/01/23")){
                         alert("Lamberton Hall - 4/1/23");
+                    }else if(dateStr.match("05/05/23")){
+                        alert("Piercefest 2023 - 5/5/23");
                     }else{
                         alert("Invalid Date");
                     }
@@ -44,6 +46,8 @@
                         location.replace("shows/111822.html");
                     }else if(moreInfo.match("y") && dateStr.match("04/01/23")){
                         location.replace("shows/040123.html");
+                    }else if(moreInfo.match("y") && dateStr.match("05/05/23")){
+                        location.replace("shows/050523.html");
                     }else if(moreInfo.match("y")){//error when trying to go to a page not created yet
                         alert("Sorry, No Associated Show Page Yet");
                     }else{
