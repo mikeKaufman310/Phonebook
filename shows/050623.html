@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phi Delt Sendoff 5/6/23</title>
+    </head>
+    <body>
+        <button id = "Home">Home</button>
+        <style>
+            button{
+                color: black;
+            }
+        </style>
+        <script>
+            document.write("<br><br>");
+            var str;
+            var header = "PHI DELTA THETA LEHIGH UNIVERSITY SENIOR SENDOFF 2023, Bethlehem, Pa - 5/6/23<br>";
+            var line = "-------------------------------------------------------------<br>";
+            var set1 = "SET 1:<br>";
+            var set2 = "SET 2:<br>";
+            var set3 = "SET 3:<br>";
+            var set4 = "SET 4:<br>";
+            var song1 = "All Along the Watchtower[1]<br>";
+            var song2 = "Funky Bitch[2]<br>";
+            var song3 = "Shakedown Street[3]<br>";
+            var song4 = "All the Things You Are[4]<br>";
+            var song5 = "Bossa Nova Jam[4]<br>";
+            var song6 = "Autumn Leaves[4] > <br>";
+            var song7 = "Satin Doll[5]<br>";
+            var song8 = "Sweet Home Alabama[6]<br>";
+            var song9 = "Mary Jane's Last Dance[7]<br>";
+            var song10 = "All Blues[8]<br>";
+            var song11 = "China Cat Sunflower[9]<br>";
+            var song12 = "Heist<br>";
+            var song13 = "House of the Rising Sun<br>";
+            var note1 = "[1] Bob Dylan Cover<br>";
+            var note2 = "[2] Son Seals Cover; First Time Played<br>";
+            var note3 = "[3] Grateful Dead Cover<br>";
+            var note4 = "[4] First Time Played<br>";
+            var note5 = "[5] Duke Ellington Cover; First Time Played<br>";
+            var note6 = "[6] Lynard Skynard Cover; First Time Played<br>";
+            var note7 = "[7] Tom Petty Cover<br>";
+            var note8 = "[8] Miles Davis Cover; First Time Played<br>";
+            var note9 = "[9] Grateful Dead Cover; First Time Played; Mike on Vocals<br>";
+            var note10 = "[10] Animals Cover; First Time Played; Featured Various Fraternity Brothers on Vocals<br>";
+            var bigNote = "Phi Delta Theta Senior Sendoff Party.<br>The second set was primarily played by Mike and Ethan while the other band members ate burgers.<br>Set 3 was delayed because Mike was missing.<br>";
+            str = header + line + "<br>" + set1 + song1 + song2 + song3 + "<br>" + set2 + song4 + song5 + song6 + song7 + "<br>" + set3 + song8 + song9 + song10 + "<br>" + set4 + song11 + song12 + song13 + "<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7 + note8 + note9 + note10 + bigNote;
+            document.write(str);
+            document.getElementById("Home").onclick = goHome;
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
