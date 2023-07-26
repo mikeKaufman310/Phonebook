@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caleb's Birthday Bash 7/21/23</title>
+    </head>
+    <body>
+        <button id = "Home">Home</button>
+        <style>
+            button{
+                color: black;
+            }
+        </style>
+        <script>
+            document.write("<br><br>");
+            var str;
+            var header = "CALEB'S BIRTHDAY BASH, Bethlehem, Pa - 7/21/23<br>"
+            var line = "-------------------------------------------------------------<br>";
+            var set1 = "SET 1:<br>"
+            var set2 = "SET 2:<br>"
+            var song1 = "Sand[1]<br>"
+            var song2 = "Heist<br>"
+            var song3 = "Running in Circles<br>"
+            var song4 = "Shakedown Street[2]<br>"
+            var song5 = "I Shall Be Released[3][7]<br>"
+            var song6 = "Cortez the Killer[4]<br>"
+            var song7 = "Fire on the Mountain[2]<br>"
+            var song8 = "Arcadia[5]<br>"
+            var song9 = "All Along the Watchtower[3]<br>"
+            var song10 = "Funky Bitch[6]<br>"
+            var note1 = "[1] Phish Cover<br>"
+            var note2 = "[2] Grateful Dead Cover<br>"
+            var note3 = "[3] Bob Dylan Cover<br>"
+            var note4 = "[4] Neil Young Cover<br>"
+            var note5 = "[5] Goose Cover<br>"
+            var note6 = "[6] Son Seals Cover<br>"
+            var note7 = "[7] First Time Played<br>"
+            var bigNote = "Caleb Geren (Close Friend of Band) Birthday and Open House Show to Replace Previously Booked and Canceled Show at Icehouse in Bethlehem, Pa<br>"
+            str = header + line + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + "<br>" + set2 + song7 + song8 + song9 + song10 + "<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7 + bigNote;
+            document.write(str);
+            document.getElementById("Home").onclick = goHome;
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
