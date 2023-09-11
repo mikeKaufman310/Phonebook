@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charles A. Brown Ice House 9/7/23</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+            var str;
+            //set 1
+            var song1 = "Criminal[1] <br>";
+            var song2 = "Ash Tray[2] <br>";
+            var song3 = "Heist <br>";
+            var song4 = "Running In Circles > <br>";
+            var song5 = "Sand[3] <br>";
+            var song6 = "Do I Look Worried[4] <br>";
+            var song7 = "Cortez the Killer[5] > <br>";
+            var song8 = "Poetry Reading[6] > <br>";
+            var song9 = "Cortez the Killer[5] <br>";
+
+            var set1 = "SET 1:<br>";
+            var header = "CHARLES A. BROWN ICE HOUSE, Bethlehem, Pa - 9/7/2023<br>-------------------------------------------------------------<br>";
+            //notes
+            var note1 = "[1] Fiona Apple Cover<br>";
+            var note2 = "[2] First Time Played<br>";
+            var note3 = "[3] Phish Cover<br>";
+            var note4 = "[4] Tedeschi Trucks Band Cover; First Time Played<br>";
+            var note5 = "[5] Neil Young Cover<br>";
+            var note6 = "[6] Poem Name: \"I Know Remember, But How Can I Help You?\"<br>";
+            var bigNote = "The show included three bands: Landline, Elephant and Catatonic Suns.<br>  Landline opened, followed by Elephant and headlined by Catatonic Suns. <br>";
+            str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + song8 + song9 + "<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + bigNote;
+
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
