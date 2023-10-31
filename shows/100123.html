@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>College Hill Porchfest 10/1/23</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+            var str;
+            //set 1
+            var song1 = "Hard To Handle[1] > <br>";
+            var song2 = "Arcadia[2] <br>";
+            var song3 = "Funky Bitch[3] <br>";
+            var song4 = "Shakedown Street[4] <br>";
+            var song5 = "Dakota[5] > <br>";
+            var song6 = "All Along the Watchtower[6] <br>";
+            var song7 = "Heist > <br>";
+            var song8 = "2001[7] <br>";
+
+            var set1 = "SET 1:<br>";
+            var header = "College Hill Porchfest, Easton, Pa - 10/1/2023<br>-------------------------------------------------------------<br>";
+
+            //notes 
+            var note1 = "[1] Otis Redding Cover; First Time Played<br>";
+            var note2 = "[2] Goose Cover<br>";
+            var note3 = "[3] Son Seals Cover<br>";
+            var note4 = "[4] Grateful Dead Cover<br>";
+            var note5 = "[5] First Time Played<br>";
+            var note6 = "[6] Bob Dylan Cover <br>";
+            var note7 = "[7] Phish Cover<br>";
+            var bigNote = "This was the second annual College Hill Porchfest in Easton, near Lafayette College<br>";
+            str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + song8 + "<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7 + bigNote;
+
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>

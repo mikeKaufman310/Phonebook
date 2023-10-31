@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Halloween 10/28/23</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "National Sokols Hall, Bethlehem, Pa - 10/28/2023<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+
+            var str;
+            //songs
+            var song1 = "Lift Off Jam[1] ><br>";
+            var song2 = "2001[2] ><br>";
+            var song3 = "Running In Circles > <br>";
+            var song4 = "Exiting the Atmosphere Jam[1] > <br>";
+            var song5 = "West LA Fadeaway[3] > <br>";
+            var song6 = "Integalactic Travel Jam[1] ><br>";
+            var song7 = "Tomorrow Never Knows[4] > <br>";
+            var song8 = "Crashdown Jam[1] > <br>";
+            var song9 = "Drums > <br>";
+            var song10 = "2001[2]<br>";
+            var song11 = "Moonage Daydream[5]<br>";
+
+            //notes 
+            var note1 = "[1] Halloween Themed Jam<br>";
+            var note2 = "[2] Phish Cover<br>";
+            var note3 = "[3] Grateful Dead Cover; First Time Played <br>";
+            var note4 = "[4] Beatles Cover; First Time Played<br>";
+            var note5 = "[5] David Bowie Cover; First Time Played<br>";
+            var bigNote = "This was Halloween 2023; The Bride of Dankenstein.  It was a three band bill that included Landline, Baba and Elephant in that order.<br>The show also included local vendors, drag queen performances and a costume contest.<br>Landline's theme was space, where all members wore a space suit and teased 2001 throughout the show.<br>Kevin broke a string and left the stage during Intergalactic Travel Jam.  Mike played a bongo during Drums.<br>Kevin played a pin flute during Drums and Moonage Daydream.  Kevin played space-themed audio during Drums.<br>The band played video clips of 2001: A Space Odyssey behind them during the entire set.";
+            
+            str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 +song6 +song7+song8+song9+song10+song11+ "<br>NOTES:<br>" +note1+note2+note3+note4+note5+bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
