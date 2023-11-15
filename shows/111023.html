@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flying V 11/10/23</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "Flying V, Bethlehem, Pa - 11/10/2023<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+
+            var str;
+            //songs
+            var song1 = "Ash Tray<br>";
+            var song2 = "Everybody Wants to Rule the World[1]<br>";
+            var song3 = "Heist<br>";
+            var song4 = "Criminal[2]<br>";
+            var song5 = "Dakota ><br>";
+            var song6 = "Sand[3] ><br>";
+            var song7 = "Poetry Reading[4] ><br>";
+            var song8 = "I Shall Be Released[5]<br>";
+            var song9 = "Shakedown Street[6]<br>";
+            //notes
+            var note1 = "[1] Tears For Fears Cover; First Time Played<br>";
+            var note2 = "[2] Fiona Apple Cover<br>";
+            var note3 = "[3] Phish Cover<br>";
+            var note4 = "[4] Poem Name: \"The Waste Land\"<br>";
+            var note5 = "[5] Bob Dylan Cover<br>";
+            var note6 = "[6] Grateful Dead Cover<br>";
+            var bigNote = "This was a four act bill: Marie Tohill, The Squiggler, Best Bear and Landline, which played in that order<br>";
+
+            str = header + "<br>" + set1 + song1 +song2 +song3+song4 + song5 +song6 +song7+song8+song9+"<br>NOTES:<br>"+note1+note2+note3+note4+note5+note6+bigNote; 
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
