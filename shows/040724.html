@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>John and Peter's 4/7/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "John and Peter's, New Hope, Pa - 4/7/2024<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+            var soundcheck = "SOUNDCHECK:<br>";
+            var sc1 = "We Play Punk Music (Sometimes?)<br>";
+
+            var str;
+            //songs
+            var song1 = "Big Skies and Easy Highs[1]<br>";
+            var song2 = "Sweet Loretta Blues[1]<br>";
+            var song3 = "Heist<br>";
+            var song4 = "Cissy Strut[1][2]<br>";
+            var song5 = "In Memory of Elizabeth Reed[3] > <br>";
+            var song6 = "Space[5] > <br>";
+            var song7 = "I Shall Be Released[4] > <br>";
+            var song8 = "Drums[5] > <br>";
+            var song9 = "The Electrician from Colorado <br>";
+
+            //notes 
+            var note1 = "[1] First Time Played<br>";
+            var note2 = "[2] Meters Cover<br>";
+            var note3 = "[3] Allman Brothers Cover <br>";
+            var note4 = "[4] Bob Dylan Cover<br>";
+            var note5 = "[5] Field Recordings<br>"
+            var bigNote = "This was the band's debut show at John and Peter's in New Hope, a very historic music venue.<br>It was a two band bill with the band Sunfish Pond from the Philadelphia area. <br>Ashtray was meant to be played before In Memory of Elizabeth Reed, but was decided on stage to be skipped.<br>This was the first show of the self-proclaimed Nobody's Blues Tour to promote the band's upcoming EP release called Nobody's Blues";
+            
+            str = header + "<br>" + soundcheck+sc1+"<br>"+ set1 + song1 + song2 + song3 + song4 + song5 +song6 +song7+song8+song9+ "<br>NOTES:<br>" +note1+note2+note3+note4+note5+bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
