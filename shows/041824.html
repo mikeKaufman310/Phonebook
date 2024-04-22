@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cloud 10 4/18/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "Cloud 10, Reading, Pa - 4/18/2024<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+            var soundcheck = "SOUNDCHECK:<br>";
+            var sc1 = "I Know You Rider[2]<br>";
+
+            var str;
+            //songs
+            var song1 = "We Play Punk Music (Sometimes?)<br>";
+            var song2 = "Heist<br>";
+            var song3 = "Sweet Loretta Blues<br>";
+            var song4 = "Nothing Left But Heaven[1]<br>";
+
+            //notes 
+            var note1 = "[1] First Time Played<br>";
+            var note2 = "[2] Grateful Dead Cover<br>"
+            var bigNote = "This was the band's debut show in Reading.<br>It was a two band bill with the band The Friendly Spectre's from the Madison, WI area. <br>Sand was meant to be played before Nothing Left But Heaven, but was decided on stage to be skipped.<br>This was the second show of the self-proclaimed Nobody's Blues Tour to promote the band's upcoming EP release called Nobody's Blues";
+            
+            str = header + "<br>" + soundcheck+sc1+"<br>"+ set1 + song1 + song2 + song3 + song4 + "<br>NOTES:<br>" +note1+note2+bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>

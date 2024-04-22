@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AC Club 4/19/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "AC Club, Beverly, Nj - 4/19/2024<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+            var set2 = "SET 2: <br>";
+
+            var str;
+            //songs
+            var song1 = "Statesboro Blues[1][2] <br>";
+            var song2 = "Back on the Train[3] <br>";
+            var song3 = "We Play Punk Music (Sometimes?) <br>";
+            var song4 = "Big Skies and Easy Highs <br>";
+            var song5 = "Funky Bitch[4] <br>";
+            var song6 = "Cissy Strut[5] <br>";
+            var song7 = "Running in Circles > <br>";
+            var song8 = "West LA Fadeaway[6] <br>";
+            var song9 = "Heist > <br>";
+            var song10 = "2001[3] <br>";
+
+            var song11 = "In Memory of Elizabeth Reed[2] > <br>";
+            var song12 = "Shakedown Street[6] <br>";
+            var song13 = "Sweet Loretta Blues <br>";
+            var song14 = "St. Stephen[1][6] <br>";
+            var song15 = "Cortez the Killer[7] > <br>";
+            var song16 = "Space > <br>";
+            var song17 = "Drums > <br>";
+            var song18 = "The Other One[1][6] > <br>";
+            var song19 = "Space > <br>";
+            var song20 = "Ashtray > <br>";
+            var song21 = "All Along the Watchtower[8] <br>";
+            var song22 = "Fire on the Mountain[6][9] <br>";
+            var song23 = "Don't Bogart That Joint[1][10] <br>";
+
+            //notes 
+            var note1 = "[1] First Time Played<br>";
+            var note2 = "[2] Allman Brothers Band Cover <br>";
+            var note3 = "[3] Phish Cover<br>";
+            var note4 = "[4] Son Seals Cover<br>";
+            var note5 = "[5] Meters Cover <br>";
+            var note6 = "[6] Grateful Dead Cover <br>";
+            var note7 = "[7] Neil Young Cover <br>";
+            var note8 = "[8] Bob Dylan Cover <br>";
+            var note9 = "[9] Robob Camp Sit-In<br>";
+            var note10 = "[10] Little Feat Cover<br>";
+            var bigNote = "This was the band's debut show in New Jersey.<br>This was the third show of the self-proclaimed Nobody's Blues Tour to promote the band's upcoming EP release called Nobody's Blues";
+            
+            str = header + "<br>"+ set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + song8 + song9 + song10+ "<br>" + set2 + song11 + song12 + song13 + song14 + song15 + song16 + song17 + song18 + song19 + song20 + song21 + song22 + song23+ "<br>NOTES:<br>" +note1+note2+note3+note4+note5+note6+note7+note8+note9+note10+bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArtsQuest Center 4/21/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "ArtsQuest Center, Bethlehem, Pa - 4/21/2024<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+            var str;
+            //songs
+            var song1 = "Heist<br>";
+            var song2 = "The Electrician from Colorado<br>";
+            var song3 = "Big Skies and Easy Highs<br>";
+            var song4 = "Sand[2] > <br>";
+            var song5 = "Running in Circles > <br>";
+            var song6 = "We Play Punk Music (Sometimes?) <br>";
+            var song7 = "Roll Another Number[1][3] <br>";
+
+            //notes 
+            var note1 = "[1] First Time Played<br>";
+            var note2 = "[2] Phish Cover<br>"
+            var note3 = "[3] Neil Young Cover <br>";
+            var bigNote = "This was the band's debut show at the Steel Stacks, the premier music venue in Bethlehem.<br>It was a six band bill with all merchandise proceeds going to the LVGR charity. <br>Kevin's amp was blown out during The Electrician from Colorado and Mike took an extra long solo.<br>This was the fourth show of the self-proclaimed Nobody's Blues Tour to promote the band's upcoming EP release called Nobody's Blues";
+            
+            str = header + "<br>"+ set1 + song1 + song2 + song3 + song4 +song5 +song6 +song7 + "<br>NOTES:<br>" +note1+note2+note3+bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
