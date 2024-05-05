@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flying V 5/4/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "Flying V, Bethlehem, Pa - 5/4/2024<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+            var set2 = "SET 2: <br>";var soundcheck = "SOUNDCHECK:<br>";
+            var sc1 = "Shakedown Street[1]<br>";
+
+            var str;
+            //songs
+            var song1 = "Big Skies and Easy Highs <br>";
+            var song2 = "West LA Fadeaway[1] <br>";
+            var song3 = "Funky Bitch[2] <br>";
+            var song4 = "Space > <br>";
+            var song5 = "Heist <br>";
+            var song6 = "Ashtray <br>";
+            var song7 = "Dakota > <br>";
+            var song8 = "Space <br>";
+            var song9 = "Running In Circles > <br>";
+            var song10 = "Space <br>";
+
+            var song11 = "Space[4][5][6] > <br>";
+            var song12 = "In Memory of Elizabeth Reed[3][4][5][6] > <br>";
+            var song13 = "Drums[4][5][6] > <br>";
+            var song14 = "In Memory of Elizabeth Reed[3][4][5][6] <br>";
+            var song15 = "Oh Sweet Nuthin'[5][6][7][9] <br>";
+            var song16 = "Reprieve Me[5][6][7][8] <br>";
+            var song17 = "Roll Another Number for the Road[6][7][10] <br>";
+
+            //notes 
+            var note1 = "[1] Grateful Dead Cover<br>";
+            var note2 = "[2] Son Seals Cover<br>";
+            var note3 = "[3] Allman Brothers Cover<br>";
+            var note4 = "[4] with John Morgan Kimock<br>";
+            var note5 = "[5] with Alex Luquet<br>";
+            var note6 = "[6] with Ben Kola<br>";
+            var note7 = "[7] with Leo Moletese<br>";
+            var note8 = "[8] Leo Moletese Cover<br>";
+            var note9 = "[9] Velvet Underground Cover<br>";
+            var note10 = "[10] Neil Young Cover<br>";
+            var bigNote = "This was the band's EP release party and show.<br>This was the fifth show of the self-proclaimed Nobody's Blues Tour to promote the band's upcoming EP release called Nobody's Blues<br>The show was originally scheduled to be played outdoors at Eskandalo! but was moved due to weather concerns.<br>The second set included giant jams with many sit ins, including John Morgan Kimock of Mike Gordon Band, Ben Kola of Dirty Grass Players, Alex Luquet of JK3 and Leo Moletese of Felt Rite.<br> The band's debut EP was released the same day, and it was played in full in the first set.";
+            
+            str = header + "<br>"+ soundcheck + sc1+ "<br>"+ set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + song8 + song9 + song10+ "<br>" + set2 + song11 + song12 + song13 + song14 + song15 + song16 + song17 + "<br>NOTES:<br>" +note1+note2+note3+note4+note5+note6+note7+note8+note9+note10+bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
