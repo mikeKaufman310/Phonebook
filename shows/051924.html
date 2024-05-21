@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Godfrey Daniels 5/19/24</title> <!--Show Page Header Title-->
+    </head>
+    <body>
+        <button id="home">Home</button> <!--Home Button-->
+        <script>
+            document.write("<br><br>");
+            
+            //build page info string to print
+            var str;
+            var song2 = "Big Skies and Easy Highs<br>";
+            var song3 = "West LA Fadeaway[1]<br>";
+            var header = "The Godfrey Daniels, Bethlehem, Pa - 5/19/2024<br>-------------------------------------------------------------<br>";
+            var set1 = "SET 1:<br>";
+            var note1 = "[1] Grateful Dead Cover<br>";
+            var bigNote = "The band performed without Anna as the \"Bobby Grant Trio\"<br>No bassist. Jakob Fett on tambourine.<br>";
+            str = header + "<br>" + set1 + song2 + song3 + "<br> NOTES:<br>" + note1 + bigNote;
+
+            document.write(str);//write info string to page
+            document.getElementById("home").onclick = goHome;//home button click function call
+
+            //home button associated function
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+</html>
