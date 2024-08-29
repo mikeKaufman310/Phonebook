@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flying V Residency 8/29/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button> <!--Home Button-->
+        <script>
+            document.write("<br><br>");
+            var str;
+            //set 1
+            var song1 = "E Jam > <br>";
+            var song2 = "Big Skies and Easy Highs <br>";
+            var song3 = "Funky Bitch[1] <br>";
+            var song4 = "G Jam > <br>";
+            var song5 = "Nothing Left But Heaven > <br>";
+            var song6 = "Heist <br>";
+            var song7 = "West LA Fadeaway[2] <br>";
+            //set 2
+            var song8 = "Space > <br>";
+            var song9 = "Sand[3] <br>";
+            var song10 = "The Electrician from Colorado[6] <br>";
+            var song11 = "F Jam > <br>";
+            var song12 = "Back on the Train[3] > <br>";
+            var song13 = "F Jam > <br>";
+            var song14 = "Back on the Train[3] <br>";
+            var song15 = "Cortez the Killer[4]<br>";
+            var song16 = "Don't Bogart the Joint[5][7]<br>";
+            var set1 = "SET 1:<br>";
+            var set2 = "SET 2:<br>";
+            var header = "Flying V Residency, Bethlehem, Pa - 8/29/2024<br>-------------------------------------------------------------<br>";
+            //notes
+            var note1 = "[1] Son Seals Cover<br>";
+            var note2 = "[2] Grateful Dead Cover<br>";
+            var note3 = "[3] Phish Cover<br>";
+            var note4 = "[4] Neil Young Cover<br>";
+            var note5 = "[5] Little Feat Cover<br>";
+            var note6 = "[6] Emma Clopton Sit In<br>";
+            var note7 = "[7] Jakob Fett Sit In, Max Peinkopfer Sit In<br>";
+            var bigNote = "The show was a the first of several free, weekday shows at the Flying V.<br>Advertised as first Flying V residency for the band."
+            str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + "<br>" + set2 + song8 + song9 + song10 + song11 + song12 + song13 + song14 +song15 + song16 +"<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7 + bigNote;
+
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
