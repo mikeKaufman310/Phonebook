@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>House Show 8/31/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button> <!--Home Button-->
+        <script>
+            document.write("<br><br>");
+            var str;
+            //set 1
+            var song1 = "All Along the Watchtower[1] <br>";
+            var song2 = "Heist <br>";
+            var song3 = "2001[2] > <br>";
+            var song4 = "Shakedown Street[3] > <br>";
+            var song5 = "2001[2] <br>";
+            var song6 = "West LA Fadeaway[3] > <br>";
+            var song7 = "Its Up To You[4] > <br>";
+            var song8 = "West LA Fadeaway[3] <br>";
+            //set 2
+            var song9 = "Oh Sweet Nuthin'[5] <br>";
+            var song10 = "Big Skies and Easy Highs <br>";
+            var song11 = "Sand[2] <br>";
+            var song12 = "We Play Punk Music > <br>";
+            var song13 = "Cissy Strut[6] > <br>";
+            var song14 = "We Play Punk Music <br>";
+            var song15 = "Roll Another Number for the Road[8]<br>";
+            var song16 = "Don't Bogart the Joint[7]<br>";
+            var set1 = "SET 1:<br>";
+            var set2 = "SET 2:<br>";
+            var header = "House Show, Bethlehem, Pa - 8/31/2024<br>-------------------------------------------------------------<br>";
+            //notes
+            var note1 = "[1] Bob Dylan Cover<br>";
+            var note2 = "[2] Phish Cover<br>";
+            var note3 = "[3] Grateful Dead Cover<br>";
+            var note4 = "[4] Steve Kimock Cover<br>";
+            var note5 = "[5] Velvet Underground Cover<br>";
+            var note6 = "[6] Meters Cover<br>";
+            var note7 = "[7] Little Feat Cover; Jakob Fett Sit In, Max Peinkopfer Sit In, Caleb Geren Sit In<br>";
+            var note8 = "[8] Neil Young Cover<br>"
+            var bigNote = "The show was a free house show thrown by the band in Ethan's back yard.<br>"
+            str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7+ song8  + "<br>" + set2 + song9 + song10 + song11 + song12 + song13 + song14 +song15 + song16 +"<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7+ note8 + bigNote;
+
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
