@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dags Bar 9/21/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button> <!--Home Button-->
+        <script>
+            document.write("<br><br>");
+            var str;
+            //set 1
+            var song1 = "Shakedown Street[1] <br>";
+            var song2 = "Joanne[3] <br>";
+            var song3 = "Mary Jane's Last Dance[4] <br>";
+            var song4 = "They Love Eachother[2] <br>";
+            var song5 = "Big Skies and Easy Highs <br>";
+            var song6 = "Electrician from Colorado <br>";
+            var song7 = "Back on the Train[5] <br>";         
+            var song8 = "Nothing Left but Heaven <br>";
+            var song9 = "Heist <br>";
+            //set 2
+            var song10 = "Running in Circles > <br>";
+            var song11 = "Oh Sweet Nuthin'[6] <br>";
+            var song12 = "Roll Another Number for the Road[7] <br>";
+            var song13 = "All Along the Watchtower[8] > <br>";
+            var song14 = "Cissy Strut[9] <br>";
+            var song15 = "I Shall Be Released[8] <br>";
+            var song16 = "In Memory of Elizabeth Reed[10] > <br>";
+            var song17 = "Its Up to You[11] > <br>";
+            var song18 = "In Memory of Elizabeth Reed[10] <br>"
+            var set1 = "SET 1:<br>";
+            var set2 = "SET 2:<br>";
+            var header = "Dags Bar, Pipersville, Pa - 9/21/2024<br>-------------------------------------------------------------<br>";
+            //notes
+            var note1 = "[1] Grateful Dead Cover<br>";
+            var note2 = "[2] Grateful Dead Cover; First Time Played<br>";
+            var note3 = "[3] First Time Played<br>";
+            var note4 = "[4] Tom Petty Cover<br>";
+            var note5 = "[5] Phish Cover<br>";
+            var note6 = "[6] Velvet Underground Cover<br>";
+            var note7 = "[7] Neil Young Cover<br>";
+            var note8 = "[8] Bob Dylan Cover<br>";
+            var note9 = "[9] Meters Cover<br>";
+            var note10 = "[10] Allman Brothers Cover<br>";
+            var note11 = "[11] Steve Kimock Cover<br>";
+            var bigNote = "The show was a free show at Dags bar.<br>The band's first appearance in Pipersville.<br>Moma Dance by Phish was teased in Cissy Strut. A Kid Named Kevin was teased before They Love Eachother.<br>"
+            str = header + "<br>" + set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 +  song8 + song9 + "<br>" + set2 + song10 + song11 + song12 + song13 + song14 +song15 + song16 + song17 + song18 +"<br>NOTES:<br>" + note1 + note2 + note3 + note4 + note5 + note6 + note7+ note8 +note9 + note10 + note11 + bigNote;
+
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
