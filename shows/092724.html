@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flying V 9/27/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+            document.write("<br><br>");
+
+            var header = "Flying V, Bethlehem, Pa - 9/27/2024<br>-------------------------------------------------------------<br>";
+            var set1= "SET 1:<br>";
+
+            var str;
+            //songs
+            var song1 = "Heist<br>";
+            var song2 = "Joanne<br>";
+            var song3 = "Cissy Strut[1]<br>";
+            var song4 = "In Memory of Elizabeth Reed[2] ><br>";
+            var song5 = "Space <br>";
+            var song6 = "Running In Circles > <br>";
+            var song7 = "Space > <br>";
+            var song8 = "Greenway Song > <br>";
+            var song9 = "Hard to Handle[3] <br>";
+
+            //notes 
+            var note1 = "[1] Meters Cover<br>";
+            var note2 = "[2] Allman Brothers Cover; Unfinished<br>";
+            var note3 = "[3] Otis Redding Cover <br>";
+            var bigNote = "It was a three band bill with the band Koi Soldiers and Alpacalips from the Philadelphia area. <br>Sweet Loretta Blues was cut from the set.<br>";
+            
+            str = header + "<br>"+ set1 + song1 + song2 + song3 + song4 + song5 +song6 +song7+song8+song9+ "<br>NOTES:<br>" +note1+note2+note3+bigNote;
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
