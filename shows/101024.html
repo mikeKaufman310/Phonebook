@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Charles A. Brown Ice House 10/10/24</title>
+    </head>
+    <body>
+        <button id="home">Home</button>
+        <script>
+
+            
+            var soundcheck = "SOUNDCHECK:<br>";
+            var sc1 = "Shakedown Street[2]<br>";
+            document.write("<br><br>");
+            var str;
+            //set 1
+            var song1 = "I Remember >[1] <br>";
+            var song2 = "Big Skies and Easy Highs <br>";
+            var song3 = "The Electrician from Colorado <br>";
+            var song4 = "Sweet Loretta <br>";
+            var song5 = "They Love Eachother[2] <br>";
+            var song6 = "John Henry Take These Blues >[1] <br>";
+            var song7 = "We Play Punk Music (Sometimes?) <br>";
+
+            var set1 = "SET 1:<br>";
+            var header = "CHARLES A. BROWN ICE HOUSE, Bethlehem, Pa - 10/10/2024<br>-------------------------------------------------------------<br>";
+            //notes
+            var note1 = "[1] First Time Played<br>";
+            var note2 = "[2] Grateful Dead Cover<br>";
+            var bigNote = "The show included three bands: Landline, Richard and Hexting.<br>  Landline opened, followed by Richard and headlined by Hexting. <br>";
+            str = header + "<br>" + soundcheck + sc1 + "<br>"+ set1 + song1 + song2 + song3 + song4 + song5 + song6 + song7 + "<br>NOTES:<br>" + note1 + note2 +bigNote;
+
+            document.write(str);
+            document.getElementById("home").onclick = goHome;
+
+            function goHome(){
+                location.replace("../PhoneBookFront.html");
+            }
+        </script>
+    </body>
+</html>
